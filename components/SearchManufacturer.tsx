@@ -16,9 +16,9 @@ const SearchManufacturer = ( {manufacturer, setManufacturer}: SearchManufacturer
         query === " " 
         ? manufacturers
         : manufacturers.filter((item) => (
-            item.toLocaleLowerCase()
-            .replace(/\s+/g, "")
-            .includes( query.toLocaleLowerCase().replace(/\s+/g, "") )
+            item.toLowerCase()
+            .replace(/\s+/g,"")
+            .includes(query.toLowerCase().replace(/\s+/g,"") )
         ))
 
   return (
@@ -49,7 +49,7 @@ const SearchManufacturer = ( {manufacturer, setManufacturer}: SearchManufacturer
                     leave="transition ease-in duration-100"
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
-                    afterLeave={ () =>setQuery('')}          
+                    afterLeave={ () => setQuery('')}          
                     >
                     <Combobox.Options>
                             { 
@@ -62,21 +62,21 @@ const SearchManufacturer = ( {manufacturer, setManufacturer}: SearchManufacturer
                                 >
                                 {({ selected, active }) => ( 
                                     <>
-                                        <span
-                                        className={`block truncate 
-                                        ${ selected?'font-medium'
-                                        :'font-normal'
-                                        }`}                    
-                                        >
-                                        {item}        
-                                        </span>
-                                        {selected ? (
-                                        <span
-                                        className={`absolute inset-y-0 left-0 flex items-center pl-3
-                                                    ${active?'text-white':'text-teal-600'}`}
-                                        >
-                                        </span>
-                                        ): null}                   
+                                    <span
+                                    className={`block truncate 
+                                    ${ selected?'font-medium'
+                                    :'font-normal'
+                                    }`}                    
+                                    >
+                                    {item}        
+                                    </span>
+                                    {selected ? (
+                                    <span
+                                    className={`absolute inset-y-0 left-0 flex items-center pl-3
+                                                ${active?'text-white':'text-teal-600'}`}
+                                    >
+                                    </span>
+                                    ): null}                   
                                     </>
                                 )}
 
