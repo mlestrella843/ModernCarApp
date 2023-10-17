@@ -17,16 +17,14 @@ export default async function Home() {
           <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
           <p>Explore the cars you might like </p>
         </div>
-      </div>
-
-        <div className="home__filters">
+          <div className="home__filters">
           <SearchBar />
-        </div>
+          </div>
             <div className="home__filter-container mt-3">
               <CustomFilter title="fuel"/>
               <CustomFilter title="year"/>
             </div>
-
+       
             { !isDataEmpty ?  (
               <section>
                 <div className="home__cars-wrapper">
@@ -35,13 +33,14 @@ export default async function Home() {
                   ))}
                 </div>
               </section>
-         
+        
             ) : (
               <div className="home__error-container">
                 <h2 className="text-black text-xl font-bold">Ooops, No results</h2>
                 <p>{allCars?.message}</p>
               </div>
             )}
+             </div>
          
     </main>
   )
