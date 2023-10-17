@@ -1,10 +1,10 @@
 
 export async function fetchCars() {
     const headers = {
-		'X-RapidAPI-Key': '3fa2520dcamshfdfd50fea0b5a08p157938jsn0016a2756649',
-		'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
+		'X-RapidAPI-Key': 'dddddd756649',
+		'X-RapidAPI-Host': 'dddddd'
 	}
-    const response = await fetch('https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla', {
+    const response = await fetch('dddddd', {
         headers: headers,
     });
 
