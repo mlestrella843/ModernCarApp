@@ -40,8 +40,7 @@ export default async function Home() {
                 <p>{allCars?.message}</p>
               </div>
             )}
-             </div>
-         
+          </div>
     </main>
   )
 }
