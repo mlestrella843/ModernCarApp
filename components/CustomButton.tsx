@@ -25,8 +25,6 @@ const CustomButton = ( { title, containerStyles, handleClick, btnType, textStyle
             />
           </div>
         )}
-
-
     </button>
   )
 }
