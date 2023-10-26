@@ -37,22 +37,17 @@ export interface FilterProps{
     fuel: string;
     limit:number;
     model: string;
-
 }
 
 export interface OptionProps{
     title: string;
     value: string;
-
 }
-
 
 export interface CustomFiltersProps{
     title: string;
     options: OptionProps[];
-
 }
-
 
 export interface ShowMoreProps{
     pageNumber: number;
