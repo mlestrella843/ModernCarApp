@@ -23,11 +23,11 @@ export default async function Home({searchParams}) {
         </div>
           <div className="home__filters">
           <SearchBar />
-          </div>
             <div className="home__filter-container mt-3">
               <CustomFilter title="fuel" options={fuels}/>
               <CustomFilter title="year" options={yearsOfProduction}/>
-            </div>     
+            </div>  
+          </div> 
             { !isDataEmpty ? (
               <section>
                 <div className="home__cars-wrapper">
