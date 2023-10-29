@@ -53,3 +53,11 @@ export interface ShowMoreProps{
     pageNumber: number;
     isNext: boolean;
 }
+
+// export interface searchParamsProps{
+//       manufacturer: string,
+//       year: number,
+//       fuel: string,
+//       limit: number,
+//       model: string,
+//     }
