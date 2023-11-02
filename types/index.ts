@@ -47,11 +47,13 @@ export interface OptionProps{
 export interface CustomFiltersProps{
     title: string;
     options: OptionProps[];
+    setFilter: Function;
 }
 
 export interface ShowMoreProps{
     pageNumber: number;
     isNext: boolean;
+    setLimit: Function;
 }
 
 // export interface searchParamsProps{
