@@ -6,7 +6,6 @@ import { fuels, yearsOfProduction } from '@/constansts';
 import { fetchCars } from '@/utils';
 import Image from 'next/image';
 
-
 // export default async function Home({searchParams}) {
 //   const allCars = await fetchCars({
 //     manufacturer: searchParams.manufacturer || '',
@@ -103,7 +102,7 @@ export default  function Home() {
             ) : (
               <div className="home__error-container">
                 <h2 className="text-black text-xl font-bold">Ooops, No results</h2>
-                <p>{allCars?.message}</p>
+                {/* <p>{allCars?.message}</p> */}
               </div>
             )}
           </div>
