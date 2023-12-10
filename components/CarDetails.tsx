@@ -75,7 +75,7 @@ const CarDetails = ({ isOpen, closeModal, car}:CarDetailsProps ) => {
                                     <div className="flex-1 relative w-full 
                                     rounded-lg h-24 bg-primary-blue-100">
                                     <Image src={generateCarImageUrl(car, '33')} alt="car model" 
-                                     fill priority className="object-contain mt-4" />
+                                     fill priority className="object-contain" />
                                     </div>
                                     <div className="flex-1 relative w-full 
                                     rounded-lg h-24 bg-primary-blue-100">
