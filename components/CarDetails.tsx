@@ -47,7 +47,7 @@ const CarDetails = ({ isOpen, closeModal, car}:CarDetailsProps ) => {
                         flex flex-col gap-5">
                             <button
                             type="button"
-                            className="absolute top-2 right-2 z-10 w-fit p-2 bg-primary-blue-100 rounded-full"
+                            className="absolute top-2 right-2 z-10 w-fit p-2 bg-[#D8539E] rounded-full"
                             onClick={closeModal}    
                             >
                                 <Image 
@@ -68,17 +68,17 @@ const CarDetails = ({ isOpen, closeModal, car}:CarDetailsProps ) => {
 
                                 <div className="flex gap-3">
                                     <div className="flex-1 relative w-full 
-                                    rounded-lg h-24 bg-primary-blue-100">
+                                    rounded-lg h-24 bg-[#D8539E]">
                                     <Image src={generateCarImageUrl(car, '29')} alt="car model" 
                                      fill priority className="object-contain" />
                                     </div>
                                     <div className="flex-1 relative w-full 
-                                    rounded-lg h-24 bg-primary-blue-100">
+                                    rounded-lg h-24 bg-[#D8539E]">
                                     <Image src={generateCarImageUrl(car, '33')} alt="car model" 
                                      fill priority className="object-contain" />
                                     </div>
                                     <div className="flex-1 relative w-full 
-                                    rounded-lg h-24 bg-primary-blue-100">
+                                    rounded-lg h-24 bg-[#D8539E]">
                                     <Image src={generateCarImageUrl(car, '13')} alt="car model" 
                                      fill priority className="object-contain" />
                                     </div>
